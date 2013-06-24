@@ -45,47 +45,33 @@ static const uint8_t A7 = 31;
 
 #ifdef ARDUINO_MAIN
 
-// On the Arduino board, digital pins are also used
-// for the analog output (software PWM).  Analog input
-// pins are a separate set.
+// digital pins are also used for the analog output (software PWM).
+// Analog input pins are a separate set.
 
-//TODO: Change this for ATMEGA 16A
+// ATMEL ATMEGA16 & 16A
 //
-// ATMEL ATMEGA8 & 168 / ARDUINO
-//
-//                  +-\/-+
-//            PC6  1|    |28  PC5 (AI 5)
-//      (D 0) PD0  2|    |27  PC4 (AI 4)
-//      (D 1) PD1  3|    |26  PC3 (AI 3)
-//      (D 2) PD2  4|    |25  PC2 (AI 2)
-// PWM+ (D 3) PD3  5|    |24  PC1 (AI 1)
-//      (D 4) PD4  6|    |23  PC0 (AI 0)
-//            VCC  7|    |22  GND
-//            GND  8|    |21  AREF
-//            PB6  9|    |20  AVCC
-//            PB7 10|    |19  PB5 (D 13)
-// PWM+ (D 5) PD5 11|    |18  PB4 (D 12)
-// PWM+ (D 6) PD6 12|    |17  PB3 (D 11) PWM
-//      (D 7) PD7 13|    |16  PB2 (D 10) PWM
-//      (D 8) PB0 14|    |15  PB1 (D 9) PWM
-//                  +----+
-//
-// (PWM+ indicates the additional PWM pins on the ATmega168.)
-
-// ATMEL ATMEGA1280 / ARDUINO
-//
-// 0-7 PE0-PE7   works
-// 8-13 PB0-PB5  works
-// 14-21 PA0-PA7 works 
-// 22-29 PH0-PH7 works
-// 30-35 PG5-PG0 works
-// 36-43 PC7-PC0 works
-// 44-51 PJ7-PJ0 works
-// 52-59 PL7-PL0 works
-// 60-67 PD7-PD0 works
-// A0-A7 PF0-PF7
-// A8-A15 PK0-PK7
-
+//                   +-\/-+
+//      (D  8) PB0  1|    |40  PA0 (AI 0)
+//      (D  9) PB1  2|    |39  PA1 (AI 1)
+//      (D 10) PB2  3|    |38  PA2 (AI 2)
+//  PWM (D 11) PB3  4|    |37  PA3 (AI 3)
+//      (D 12) PB4  5|    |36  PA4 (AI 4)
+//      (D 13) PB5  6|    |35  PA5 (AI 5)
+//      (D 14) PB6  7|    |34  PA6 (AI 6)
+//      (D 15) PB7  8|    |33  PA7 (AI 7) 
+//           RESET  9|    |32  AREF
+//             VCC 10|    |31  GND
+//             GND 11|    |30  AVCC
+//           XTAL2 12|    |29  PB7 (D 23)
+//           XTAL1 13|    |28  PC6 (D 22)
+//       (D 0) PD0 14|    |27  PC5 (D 21)
+//       (D 1) PD1 15|    |26  PC4 (D 20)
+//       (D 2) PD2 16|    |25  PC3 (D 19) 
+//       (D 3) PD3 17|    |24  PC2 (D 18)
+//   PWM (D 4) PD4 18|    |23  PC1 (D 17)
+//   PWM (D 5) PD5 19|    |22  PC0 (D 16) 
+//       (D 6) PD6 20|    |21  PD7 (D 7) PWM
+//                   +----+
 
 // these arrays map port names (e.g. port B) to the
 // appropriate addresses for various functions (e.g. reading
