@@ -19,6 +19,11 @@ After the restart, you should be able to see the new boards under the boards men
 
 ![](arduino-extra-core.png)
 
+Add support for more microcontrollers
+-------------------------------------
+
+If you want to add support for more microcontrollers, then follow [this guide](http://hardwarefun.com/tutorials/use-arduino-code-in-non-arduino-avr-microcontroller), where I explain how to add support for more microcontrollers.
+
 Contribution
 -------------
 
@@ -29,6 +34,6 @@ If you are looking for ideas to work on, then check out the following TODO items
 TODO
 ----
 
-- Add support for more cores
+- Add support for more microcontrollers
 - Getting started guide
 - Better documentation
