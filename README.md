@@ -17,6 +17,8 @@ To install these additional cores, download or checkout the project from github 
 
 After the restart, you should be able to see the new boards under the boards menu. Select the board which you want to program.
 
+![](arduino-extra-core.png)
+
 Contribution
 -------------
 
