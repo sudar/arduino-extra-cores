@@ -4,7 +4,6 @@
 ##############################################################
 atmega16-8.name=Atmega16 (internal 8MHz clock)
 
-atmega16-8.upload.protocol=stk500v2
 atmega16-8.upload.maximum_size=14336
 atmega16-8.upload.speed=57600
 
