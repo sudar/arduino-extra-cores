@@ -13,6 +13,8 @@ Using these extra cores, you can program the corresponding AVR chip using Arduin
 Installation
 -------------
 
+**Note**: _Right now this core works only with Arduino 1.0.x and support for Arduino 1.5.x is in the works_
+
 To install these additional cores, download or checkout the project from github and then copy the `arduino-extra-core` directory to the `/hardware` folder of your sketchbook folder and then restart the Arduino IDE. You can name the subdirectory in /hardware anything you like.
 If the directory hardware does not exists, you can create it first.
 
@@ -24,6 +26,9 @@ Add support for more microcontrollers
 -------------------------------------
 
 If you want to add support for more microcontrollers, then follow [this guide](http://hardwarefun.com/tutorials/use-arduino-code-in-non-arduino-avr-microcontroller), where I explain how to add support for more microcontrollers.
+
+If you want to program these micro controllers using Arduino as an ISP programmer, then follow [this guide](http://hardwarefun.com/tutorials/use-arduino-as-an-isp-programmer-to-program-non-arduino-avr-microcontrollers).
+
 
 Contribution
 -------------
